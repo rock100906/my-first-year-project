@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>rock打卡站</title>
+<style>
+    .computer{color: black;}
+    .fitness{color: cadetblue;}
+    .study{color: burlywood;}
+  </style>
+</head>
+
+<body>
+    <h1 id="title">hi!这是我的第一个网页,从这里开始</h1>
+    <h2 class="computer c1">计算机</h2>
+    <p>my first html</p>
+    <p> change the color</p>
+    <p>try more</p>
+    <h2 class="fitness f1">健身</h2><p>第五周第四天</p>
+    <h2 class="study s1">学习</h2><p>暂无</p>
+    <script>
+    document.getElementById('title').addEventListener('click',function(){
+        alert('helloJS!');
+    });
+    let list = document.querySelectorAll('h2');
+    for(let i=0;i<list.length;i++){
+        list[i].addEventListener('click',function(){
+             alert('gogogo');
+        });
+    }       
+</script>
+</body>
+</html>
